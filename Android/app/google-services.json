@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1069339282534",
+    "project_id": "authted-d85b3",
+    "storage_bucket": "authted-d85b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069339282534:android:4094797f1f8edd4542b1a7",
+        "android_client_info": {
+          "package_name": "com.example.thored"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069339282534-l2m4uu5loorlcmncfbeh734c2a7mb32a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDlNzTCPwrXzY22HWQ3Kx7GDi0CIVuVwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069339282534-l2m4uu5loorlcmncfbeh734c2a7mb32a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
