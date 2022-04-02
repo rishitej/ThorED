@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ThorED</string>
+    <string name="login">Log-in / Sign-in!</string>
+    <string name="forgotPwd">Forgot Password?</string>
+    <string name="signup">Sign-Up?/Create Account?</string>
+    <string name="loginBtn">Log-In</string>
+    <string name="signup_ra">Sign-Up / Create Account!</string>
+    <string name="signupBtn">Sign-Up</string>
 </resources>
