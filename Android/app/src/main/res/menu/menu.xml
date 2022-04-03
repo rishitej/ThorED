@@ -9,18 +9,18 @@
         app:showAsAction="ifRoom">
 
         <menu>
-            <item
-                android:id="@+id/profile"
-                android:icon="@drawable/ic_profile"
-                android:title="Profile!"
-                app:showAsAction="never" />
             <!--
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/ic_profile"
+                    android:title="Profile!"
+                    app:showAsAction="never" />
+             -->
             <item
                 android:id="@+id/setting"
                 android:icon="@drawable/ic_setting"
                 android:title="Settings!"
                 app:showAsAction="never" />
-            -->
             <item
                 android:id="@+id/code"
                 android:icon="@drawable/ic_code"
@@ -41,8 +41,7 @@
                 android:id="@+id/exit"
                 android:icon="@drawable/ic_exit"
                 android:title="Exit"
-                app:showAsAction="ifRoom"
-                />
+                app:showAsAction="ifRoom" />
         </menu>
     </item>
 

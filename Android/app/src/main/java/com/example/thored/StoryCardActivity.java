@@ -29,7 +29,7 @@ public class StoryCardActivity extends AppCompatActivity {
 
     private RequestQueue queue;
 
-    public static final String BASE_URL = "http://137.116.32.204:9000/";
+    public static final String BASE_URL2 = "http://137.116.32.204:9000/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,20 +56,20 @@ public class StoryCardActivity extends AppCompatActivity {
         }
         queue = Volley.newRequestQueue(StoryCardActivity.this);
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET,
-                Uri.parse(BASE_URL+PROMPT+QUERRY2).toString(), null,
+                Uri.parse(BASE_URL2+PROMPT+QUERRY2).toString(), null,
                 response -> {
                     try {
                         String code = response.getString("code");
                         binding.q2Tv.setVisibility(View.VISIBLE);
                         querryResponse2 = code;
-                        binding.q2Tv.setText(querryResponse2);
-                        Toast.makeText(this, "request successful!", Toast.LENGTH_SHORT).show();
+                        binding.q2Tv.setText(code);
+                        Toast.makeText(this, "request successfull!", Toast.LENGTH_SHORT).show();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }, error -> {
-            Toast.makeText(this, "ERROR: " + error.getMessage(), Toast.LENGTH_LONG).show();
-            Log.d("MainActivity LOG: ", "ERROR: " + error.getMessage());
+            Toast.makeText(this, "ERROR: a " + error.getMessage(), Toast.LENGTH_LONG).show();
+            Log.d("MainActivity LOG: ", "ERROR: b " + error.getMessage());
         }) {
             @Override
             public Map<String, String> getHeaders() {

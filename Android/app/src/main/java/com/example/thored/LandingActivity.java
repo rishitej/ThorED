@@ -44,18 +44,10 @@ public class LandingActivity extends AppCompatActivity {
             binding.welcomeTv.setText(welcomeText);
         }
 
-        binding.sqlCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(LandingActivity.this, SQLCardActivity.class));
-            }
-        });
-        binding.storyCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(LandingActivity.this, StoryCardActivity.class));
-            }
-        });
+        binding.sqlCard.setOnClickListener(view -> startActivity(new Intent(LandingActivity.this, SQLCardActivity.class)));
+        binding.visualCard.setOnClickListener(view -> startActivity(new Intent(LandingActivity.this, VisualCardActivity.class)));
+        binding.storyCard.setOnClickListener(view -> startActivity(new Intent(LandingActivity.this, StoryCardActivity.class)));
+        binding.summaryCard.setOnClickListener(view -> startActivity(new Intent(LandingActivity.this, SummaryCardActivity.class)));
 
     }
 
@@ -68,7 +60,7 @@ public class LandingActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == R.id.profile) {
+        if (item.getItemId() == R.id.setting) {
             startActivity(new Intent(Settings.ACTION_SETTINGS));
             return true;
         } else if (item.getItemId() == R.id.code) {

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LandingActivity">
+    tools:context=".LandingActivity"
+    android:background="@drawable/bg0">
 
 
     <androidx.core.widget.NestedScrollView
@@ -95,7 +96,7 @@
                                 android:layout_height="match_parent"
                                 android:contentDescription="@string/thumbnail"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/logo" />
+                                app:srcCompat="@drawable/sql" />
                         </androidx.cardview.widget.CardView>
 
                         <TextView
@@ -152,7 +153,7 @@
                                 android:layout_height="match_parent"
                                 android:contentDescription="@string/thumbnail"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/logo" />
+                                app:srcCompat="@drawable/vis" />
                         </androidx.cardview.widget.CardView>
 
                         <TextView
@@ -220,7 +221,7 @@
                                 android:layout_height="match_parent"
                                 android:contentDescription="@string/thumbnail"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/logo" />
+                                app:srcCompat="@drawable/story" />
                         </androidx.cardview.widget.CardView>
 
                         <TextView
@@ -276,7 +277,7 @@
                                 android:layout_height="match_parent"
                                 android:contentDescription="@string/thumbnail"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/logo" />
+                                app:srcCompat="@drawable/sum" />
                         </androidx.cardview.widget.CardView>
 
                         <TextView

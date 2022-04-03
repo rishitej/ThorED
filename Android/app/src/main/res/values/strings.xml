@@ -15,4 +15,6 @@
     <string name="_4">Summarize Paras</string>
     <string name="card1_d">Input your question and get relavant SQL querry</string>
     <string name="card2_d">Enter the opening lines of your Story or give a Plot</string>
+    <string name="card4_d">Summary of the Story by Story input or Tiltle Input</string>
+    <string name="card3_d">Visualize the Sample data by entering the chat type!</string>
 </resources>

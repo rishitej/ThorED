@@ -43,7 +43,6 @@ public class SQLCardActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void makeVolleyRequest() {
