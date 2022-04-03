@@ -2,7 +2,8 @@
 Lightning Fast Edu Solutions
 
 # What it does
-This app has 4 components: 1) Text-to-Code : This will help database students working on SQL to produce custom queries using NLP. It only requires the query as normal text or as a normal human would interpret, and returns a SQL query as output.
+This app has 4 components:
+1) Text-to-Code : This will help database students working on SQL to produce custom queries using NLP. It only requires the query as normal text or as a normal human would interpret, and returns a SQL query as output.
 
 2)Story Generator - Input a few lines from your creative brain, and get a whole story in return. This uses AI to construct a story just out of few lines.
 
