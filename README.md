@@ -3,13 +3,14 @@ Lightning Fast Edu Solutions
 
 # What it does
 This app has 4 components:
-1) Text-to-Code : This will help database students working on SQL to produce custom queries using NLP. It only requires the query as normal text or as a normal human would interpret, and returns a SQL query as output.
 
-2)Story Generator - Input a few lines from your creative brain, and get a whole story in return. This uses AI to construct a story just out of few lines.
+  1) Text-to-Code : This will help database students working on SQL to produce custom queries using NLP. It only requires the query as normal text or as a normal human would interpret, and returns a SQL query as output.
 
-3) Summary Framer - Tired of reading a whole document? Wishing you could finish it faster? Using our Summary framer, get a summary of your whole text in minimal lines and get the help you need.
+  2)Story Generator - Input a few lines from your creative brain, and get a whole story in return. This uses AI to construct a story just out of few lines.
 
-4)Visualization Tool - Want to create beautiful and accurate plots? Using our tool, input you data, and get accurate results in bar plot, scatter plot etc.
+  3) Summary Framer - Tired of reading a whole document? Wishing you could finish it faster? Using our Summary framer, get a summary of your whole text in minimal lines and get the help you need.
+
+  4)Visualization Tool - Want to create beautiful and accurate plots? Using our tool, input you data, and get accurate results in bar plot, scatter plot etc.
 
 # How I built it
 The application was built using Android framework wherein, the ML model was build using a NLP based text generation GTP model and fine tuned it according to our tasks. Then ,we created an API using Flask framework in Python. For android application, we used Volley library for HTTP GET and POST methods to communicate with Flask API and used Firebase for authentication and storage.
