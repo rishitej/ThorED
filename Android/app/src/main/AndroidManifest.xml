@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ThorED">
         <activity
+            android:name=".SQLCardActivity"
+            android:exported="false" />
+        <activity
             android:name=".LandingActivity"
             android:exported="false" />
         <activity

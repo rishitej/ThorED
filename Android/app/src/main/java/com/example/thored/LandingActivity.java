@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.example.thored.databinding.ActivityLandingBinding;
 import com.google.firebase.auth.FirebaseAuth;
@@ -20,6 +21,8 @@ public class LandingActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
+    private String username, welcomeText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +30,26 @@ public class LandingActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         mAuth = FirebaseAuth.getInstance();
+
+        welcomeText = getResources().getString(R.string.welcome);
+
+        Bundle bundle = getIntent().getExtras();
+        if(bundle != null){
+            username = bundle.getString("Username");
+
+            welcomeText += " " + username + "!";
+            binding.welcomeTv.setText(welcomeText);
+        }else {
+            welcomeText += " Hammer!";
+            binding.welcomeTv.setText(welcomeText);
+        }
+
+        binding.sqlCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LandingActivity.this, SQLCardActivity.class));
+            }
+        });
 
     }
 

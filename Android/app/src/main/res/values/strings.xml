@@ -6,4 +6,12 @@
     <string name="loginBtn">Log-In</string>
     <string name="signup_ra">Sign-Up / Create Account!</string>
     <string name="signupBtn">Sign-Up</string>
+    <string name="welcome">"Welcome"</string>
+    <string name="choose">Select your purpose!</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="_1">SQL converter</string>
+    <string name="_2">Visualize my DATA</string>
+    <string name="_3">Fill my Story!</string>
+    <string name="_4">Summarize Paras</string>
+    <string name="card1_d">Input your question and get relavant SQL querry</string>
 </resources>
