@@ -50,6 +50,12 @@ public class LandingActivity extends AppCompatActivity {
                 startActivity(new Intent(LandingActivity.this, SQLCardActivity.class));
             }
         });
+        binding.storyCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LandingActivity.this, StoryCardActivity.class));
+            }
+        });
 
     }
 
@@ -66,14 +72,16 @@ public class LandingActivity extends AppCompatActivity {
             startActivity(new Intent(Settings.ACTION_SETTINGS));
             return true;
         } else if (item.getItemId() == R.id.code) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/rishitej/")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/rishitej/ThorED")));
             return true;
         } else if (item.getItemId() == R.id.help) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://developer.android.com")));
+            startActivity(new Intent(Intent.ACTION_SENDTO, Uri
+                    .fromParts("mailto","rishitejyp19c@iiitt.ac.in",null)));
             return true;
         } else if (item.getItemId() == R.id.logout) {
             mAuth.signOut();
             startActivity(new Intent(LandingActivity.this, MainActivity.class));
+            finish();
             return true;
         } else if (item.getItemId() == R.id.exit) {
             System.exit(1);

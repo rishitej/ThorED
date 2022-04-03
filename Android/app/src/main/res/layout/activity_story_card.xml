@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SQLCardActivity">
+    tools:context=".StoryCardActivity">
 
     <TextView
-        android:id="@+id/c1d_tv"
+        android:id="@+id/c2d_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="5dp"
         android:gravity="center"
-        android:text="@string/card1_d"
+        android:text="@string/card2_d"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -22,25 +22,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/q1_til"
+        android:id="@+id/q2_til"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/c1d_tv">
+        app:layout_constraintTop_toBottomOf="@+id/c2d_tv">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/q1_et"
+            android:id="@+id/q2_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="ex: Display salary from employee table"
+            android:layout_height="105dp"
+            android:hint="ex: Once upon a time, there lived a King."
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/q1_btn"
+        android:id="@+id/q2_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
@@ -48,21 +48,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q1_til" />
+        app:layout_constraintTop_toBottomOf="@+id/q2_til" />
 
     <TextView
-        android:id="@+id/q1_tv"
+        android:id="@+id/q2_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="35dp"
-        android:layout_marginEnd="50dp"
-        android:background="#545454"
-        android:textIsSelectable="true"
-        android:textSize="20sp"
-        android:visibility="gone"
+        android:layout_marginEnd="45dp"
+        android:maxLines="5"
+        android:ellipsize="end"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q1_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/q2_btn" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

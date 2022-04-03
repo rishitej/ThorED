@@ -14,4 +14,5 @@
     <string name="_3">Fill my Story!</string>
     <string name="_4">Summarize Paras</string>
     <string name="card1_d">Input your question and get relavant SQL querry</string>
+    <string name="card2_d">Enter the opening lines of your Story or give a Plot</string>
 </resources>
